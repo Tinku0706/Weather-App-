@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <style>
+    body {
+      background-color: #2A7B9B;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .main {
+      background-color: aliceblue;
+      max-width: 400px;
+      padding: 40px;
+      margin: 100px auto;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    #txt {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 20px;
+      display: block;
+      box-sizing: border-box;
+    }
+
+    #btn {
+      padding: 12px 20px;
+      font-size: 16px;
+      margin: 0 auto;
+      background-color: rgb(149, 153, 199);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #btn:hover {
+      background-color: rgb(167, 180, 176);
+    }
+
+    #weather-result {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main" id="mn">
+    <h2>WEATHER REPORT</h2>
+    <input type="text" id="txt" placeholder="Enter city name" />
+    <button onclick="getdetails()" id="btn">Get Weather</button>
+    <div id="weather-result"></div>
+  </div>
+
+  <script src="weather.js">
+  </script>
+</body>
+</html>
